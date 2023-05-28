@@ -1,0 +1,288 @@
+$font1: 'Asap Condensed', sans-serif; 
+$boja1: #EDEDED;
+$boja2: #444444;
+$boja3: #171717;
+$boja4: #DA0037;
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $boja1;
+    font-family: $font1 ;
+    color:$boja3;
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+        margin-top: 8px;
+    }
+}
+.center-block {
+    width: 80%;
+    margin: 0px auto;
+}    
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+header{
+     ul li a{
+        margin-left: 35px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $boja3;
+        transition: 0.2s ease-in;
+        
+        
+        }
+        ul li{
+            text-align: center;
+        }
+        #logo a{
+            color: $boja3;
+        }
+        h1{
+            font-weight: 400;
+            font-family: 'Caveat', cursive;
+        }
+        li a:hover{
+            color:$boja4;
+        }
+        
+        
+        
+}
+.dg-margina{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#background{
+    background-image: url(../../assets/img/bg.jpg);
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+.overlay{
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    height: inherit;
+}
+.ai-center{
+    align-items: center;
+}
+.jcenter{
+    justify-content: center;
+}
+.box-pozadina{
+    width: 50%;
+    text-align: center;
+    color: $boja1;
+    h1{
+        margin-bottom: 15px;
+        font-size: 42px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    button{
+        background-color: transparent;
+        padding: 15px 40px;
+        border: 1px #d3d3d3 solid;
+        border-radius: 5px;
+        margin-top: 40px;
+        transition: 0.3s ease-in;
+        a{
+            color: #d3d3d3;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            
+            
+        }
+        
+    }
+    button:hover{
+        background-color: $boja4;
+        transform: scale(1.1);
+    }
+}
+.box-prvi{
+    width: 70%;
+    padding: 50px 0;
+}
+.minibox{
+    width: 55%;
+    
+    h3{
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    p{
+        font-size: 20px;
+    }
+    
+}
+.space-around{
+    justify-content: space-around;
+}
+.minibox-slika{
+    width: 25%;
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+.naslov{
+    margin: 40px 0;
+    font-weight: bolder;
+    font-size: 28px;
+}
+.drugi{
+    background-color: $boja3;
+    color: $boja1;
+}
+.trikolon{
+    width: 30%;
+    text-align: center;
+    padding: 80px 0;
+    transition: 0.2s ease-in-out;
+    i{
+        font-size: 156px;
+       
+    }
+    h3{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    p{
+        margin: 0px 10px;
+    }
+    
+    
+}
+
+
+.trikolon:hover{
+    background-color: $boja4;
+}
+footer{
+    background-color: $boja4;
+    color: $boja1;
+    ul{
+        display: inline-block;
+        a{
+            text-decoration: none;
+            color: $boja1;
+        }
+        li{
+            margin:20px 25px;
+        }
+    }
+}
+#logo-footer{
+    font-family: 'Caveat', cursive;
+    a{
+        color: $boja1;
+    }
+}
+#footer-desno{
+    font-size: 32px;
+    display: block;
+    margin: 20px 60px;
+    i{
+        margin-left: 20px;
+    }
+    a{
+        color: $boja1;
+    }
+}
+.sajtprev{
+    width: 30%;
+    margin-bottom: 50px;
+    text-align: center;
+   
+    img{
+        width: 100%;
+        border-radius: 5px;
+        border: 1px $boja3 solid;
+        transition: 0.4s ease-in;
+        -webkit-filter: grayscale(1);
+       
+    }
+    img:hover{
+        scale: 1.1;
+        -webkit-filter: grayscale(0);
+    }
+    h3{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+}
+.textbox{
+    display: block;
+}
+.width{
+    width:40%;
+}
+.textbox{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}   
+    label{
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: $boja1;
+    }
+    input{
+        padding: 10px 5px;
+        margin-bottom: 15px;
+        color: $boja3;
+        border-radius: 5px;
+    }
+    textarea{
+        padding: 10px 5px;
+        height: 100px;
+    }
+
+form{
+    width: 100%;
+    margin: 80px 0px;
+}
+.data{
+    
+    p{
+        font-size: 24px;
+        margin: 50px 150px;
+    }
+}
+.box-treci{
+    background-color: $boja3;
+}
+input[type=submit]{
+    background-color: $boja4;
+  color: $boja1;
+  padding: 10px 30px;
+  border: 2px $boja2 solid;
+  border-radius: 4px;
+  margin-top: 15px;
+  font-family: $font1;
+  font-size: 16px;
+  transition: 0.2s ease;
+  
+  
+} 
+input[type=submit]:hover{
+    border: 2px $boja1 solid;
+  }
