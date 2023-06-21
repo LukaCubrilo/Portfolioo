@@ -62,9 +62,16 @@
   footer #f-right{
     margin-right: 0px;
   }
+  footer #footer-center{
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 321px) {
   .box .minibox-photo{
     width: 90%;
   }
+  footer #f-right{
+    font-size: 10px;
+  }
+  
 }
