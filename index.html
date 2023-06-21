@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Luka Čubrilo" />
     <meta name="description" content="Luka Čubrilo Potfolio of a first year student " />
-    <meta name="keywords" content="Čubrilo,Čubrilo,Portfolio-Luka Čubrilo,About,Skills,HTML5,CSS3,SASS" />
+    <meta name="keywords" content="Luka,Čubrilo,Portfolio-Luka Čubrilo,About,Skills,HTML5,CSS3,SASS,Front-end" />
     <link rel="stylesheet" style="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" style="text/css" href="assets/css/responsive.css"/>
     <title>Portfolio-Luka Čubrilo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -15,14 +16,13 @@
   </head>
   <body>
     <header>
-      <div class="center-block d-flex space-between dg-margina jcenter2 ">
       <div id="logo"><h1><a href="index.html">Luka Čubrilo</a></h1></div>
       <nav>
-        <ul class="d-flex jcenter2 ">
-          <li><a class="nav-und" href="#About">About</a></li>
-          <li><a class="nav-und" href="#Skills">Skills</a></li>
-          <li><a class="nav-und" href="#Work">Work</a></li>
-          <li><a class="nav-und" href="#Contact">Contact</a></li>
+        <ul>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Work">Work</a></li>
+          <li><a href="#Contact">Contact</a></li>
           
         </ul>
       </nav>
@@ -30,8 +30,8 @@
     </header>
     <main>
       <div id="background">
-        <div class="overlay d-flex ai-center jcenter">
-        <div class="box-pozadina ">
+        <div class="overlay">
+        <div class="box-background ">
           <h1>Welcome</h1>
           <h2>Portfolio of a first-year student studying at an ICT college.</h2>
           <button><a href="#Contact">Contact</a></button>
@@ -39,10 +39,9 @@
       </div>
       </div>
       <section id="About">
-      <div class="naslov d-flex ai-center jcenter"><h2>ABOUT</h2></div>
-      <div class="box-prvi center-block d-flex space-around">
+      <div class="title"><p>ABOUT ME</p></div>
+      <div class="box first">
         <div class="minibox ">
-          <h3>About me</h3>
           <p>
             I am a first-year ICT college student, eager to dive into the world 
             of technology and innovation. With a passion for learning and a drive
@@ -56,77 +55,81 @@
           </p>
           
         </div>
-        <div class="minibox-slika">
+        <div class="minibox-photo">
           <img src="assets/img/mojaslika.jpg" alt="About-image"/>
         </div>
       </div>
     </section>
     <section id="Skills">
-      <div class="naslov  d-flex ai-center jcenter">
-        <h2>SKILLS</h2>
+      <div class="title">
+        <p>SKILLS</p>
       </div>
-      <div class="box drugi ">
-        <div class="center-block d-flex space-between fd">
-        <div class="trikolon">
-          <i class='bx bxl-html5'></i>
-          <h3>HTML5</h3>
-          <p> I am dedicated to expanding my knowledge and expertise in HTML5, focusing on creating dynamic and interactive websites. With a deep understanding of HTML5's latest standards and best practices, I excel in structuring web content using semantic tags and elements.</p>
+      <div class="box second">
+        <div class="col">
+          <i class='bx bx-code-alt'></i>
+          <h3>Front end</h3>
+          <p>Front-end development is a crucial aspect of web development that focuses on creating the user-facing part of a website or application. As a front-end developer, my role is to bring designs to life by writing clean, efficient code using HTML, CSS, and JavaScript.</p>
         </div>
-        <div class="trikolon">
-          <i class='bx bxl-css3' ></i>
-          <h3>CSS3</h3>
-          <p>As a dedicated web developer, I have a strong command of CSS3 and its powerful styling capabilities. With an eye for design and attention to detail, I excel at creating visually appealing and engaging user interfaces.</p>
+        <div class="col">
+          <i class='bx bxs-devices'></i>
+          <h3>Responsive</h3>
+          <p>As a front-end developer specializing in responsive design, I prioritize building flexible layouts and fluid user interfaces that seamlessly adjust their appearance and functionality based on the user's device. </p>
         </div>
-        <div class="trikolon">
-          <i class='bx bxl-sass' ></i>
-          <h3>SASS</h3>
-          <p>As a skilled web developer, I have a strong command of SASS and its benefits in improving CSS workflow and efficiency. With SASS, I can write clean and modular code using variables, mixins, and nested selectors, allowing for easier maintenance and scalability.</p>
+        <div class="col">
+          <i class='bx bx-search-alt-2'></i>
+          <h3>SEO</h3>
+          <p>SEO, or Search Engine Optimization, is vital for improving website visibility and organic rankings in search results. As a front-end developer with SEO knowledge, I optimize websites using techniques like meta tags, keywords, and structured data.</p>
+        </div>
+        <div class="col">
+          <i class='bx bxl-javascript' ></i>
+          <h3>JS</h3>
+          <p>JavaScript is a versatile and widely used programming language primarily used for building interactive and dynamic web pages. It is supported by all modern web browsers and provides the ability to add functionality and interactivity to websites. </p>
         </div>
       </div>
     </div>
   </section>
   <section id="Work">
-  <div class="naslov d-flex ai-center jcenter">
-      <h2>WORK</h2>
+  <div class="title">
+      <p>MY WORK</p>
     </div>
-      <div class="box treci d-flex ai-center space-around fd">
-        <div class="sajtprev">
+      <div class="box third">
+        <div class="siteprev">
           <a href="index.html"><img src="assets/img/sajt1.JPG" alt="Project"/></a>
-          <h3>Dub Caffe</h3>
-          <p>This is my first project in HTML5,CSS3 structure.</p>
+          <p>My first project for DUB Caffe</p>
         </div>
 
-        <div class="sajtprev">
+        <div class="siteprev">
           <a href="index.html"><img src="assets/img/sajt2.JPG" alt="Project"/></a>
-          <h3>Portfolio</h3>
-          <p>This is my second project using HTML5,CSS3,SASS.</p>
+          <p>My second portfolio project</p>
+        </div>
+        <div class="siteprev">
+          <a href="index.html"><img src="assets/img/sajt3.JPG" alt="Project"/></a>
+          <p>My third project for Air Mic</p>
         </div>
       </div>
 
     </section>  
     <section id="Contact">
-      <div class="naslov d-flex ai-center jcenter">
-        <h2>CONTACT</h2>
+      <div class="title">
+        <p>CONTACT</p>
       </div>
-      <div class="box-treci">
-      <div class="center-block width d-flex space-between ">
+      <div class="box fourth">
         <form method="post">
-          <div class="textbox">
+          <div class="textbox tname">
             <label for="name">First Name</label>
-            <input type="text" id="name" name="firstname" placeholder="Your name...">
+            <input type="text" id="name" name="firstname" placeholder="Your name..." required>
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-            
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
           </div>
           <div class="textbox">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your Email...">
+            <input type="email" name="email" id="email" placeholder="Enter your Email..." required>
           </div>
           <div class="textbox">
             <label for="Message">Message</label>
             <textarea id="Message" name="Message" placeholder="Your message..."></textarea>
           </div>
-          <input type="submit" value="Submit">
+          <input type="submit" id="submit" value="Submit">
         </form>
         
        
@@ -134,26 +137,16 @@
     </div>
     </section>
     </main>
-    <footer class="d-flex space-between fd">
-      <div id="footer-levo">
-        <ul class="d-flex jcenter2">
-          <li><a href="#About">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Work">Work</a></li>
-          <li><a href="#Contact">Contact</a></li>
-          
-        </ul>
+    <footer>
+      <div id="footer-center">
+        <div id="logo-footer"><p><a href="index.html">	&copy;Luka Čubrilo</a></p></div>
       </div>
-      <div id="footer-centar" class="d-flex ai-center jcenter">
-        <div id="logo-footer"><h1><a href="index.html">	&copy;Luka Čubrilo</a></h1></div>
-      </div>
-      <div id="footer-desno">
+      <div id="f-right">
         <a href="sitemap.xml"><i class='bx bx-sitemap' ></i></a>
+        <a href="assets/css/style.css"><i class='bx bxl-css3' ></i></a>
         <a href="assets/css/style.scss"><i class='bx bxl-sass' ></i></a>
         <a href="https://www.instagram.com"><i class='bx bxl-instagram' ></i></a>
         <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin' ></i></a>
-        
-        
         
       </div>
     </footer>
